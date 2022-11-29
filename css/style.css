@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  font-family: sans-serif;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+}
+nav a {
+  font-size: 18px;
+  font-weight: bold;
+}
+nav .sign {
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(16, 95, 243);
+  color: #fff;
+  border-radius: 8px;
+}
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/Thibaut\ POINLOUP\ -\ bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+header section {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 40%;
+  transform: translate(-30%, -50%);
+}
+header section h1 {
+  text-align: center;
+  margin: 30px auto;
+  color: #fff;
+}
+header section article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header section article input,
+header section article button {
+  padding: 10px;
+}
+header section article input {
+  background-color: #D9D9D9;
+  border: none;
+}
+header section article button {
+  background-color: rgba(16, 95, 243, 0.5);
+  border: none;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+div.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.cards article {
+  width: 300px;
+}
+div.cards article i {
+  font-size: 80px;
+  text-align: center;
+  color: rgba(16, 95, 243);
+  margin: 60px auto;
+  display: block;
+}
+div.cards article h2,
+div.cards article p {
+  text-align: center;
+}
+div.cards article h2 {
+  margin-bottom: 30px;
+}
+span {
+  display: block;
+  margin: 60px auto;
+  height: 2px;
+  width: 50%;
+  background-color: #b6b6b6;
+}
+section.formulaire {
+  margin-bottom: 60px;
+}
+section.formulaire h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+section.formulaire form {
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+}
+section.formulaire form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.formulaire form input {
+  padding: 10px;
+  width: 300px;
+  margin: 15px;
+  background-color: #D9D9D9;
+}
+section.formulaire form textarea {
+  margin: 0 auto;
+  display: block;
+  width: 73%;
+  background-color: #D9D9D9;
+}
+section.formulaire form button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(16, 95, 243);
+  color: #fff;
+  border: none;
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 8px;
+}
+footer {
+  background-color: #d9d9d9;
+  padding: 10px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li a {
+  color: rgba(16, 95, 243);
+}
