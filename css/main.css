@@ -209,4 +209,18 @@ span {
   color: rgb(145, 143, 143);
 }
 
+@media screen and (max-width: 420px) {
+  .footer__ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .footer__paragraph {
+    margin-left: 0%;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

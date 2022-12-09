@@ -1,24 +1,41 @@
-.footer{
+.footer {
     width: 100%;
     height: auto;
     padding: 10px;
     background-color: rgb(216, 216, 216);
-    &__ul{
+    &__ul {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 15px;
         margin-left: 10%;
-        &__li{
+        &__li {
             list-style-type: none;
-            &__a{
+            &__a {
                 text-decoration: none;
                 color: rgba(26, 38, 211);
             }
         }
     }
-    &__paragraph{
+    &__paragraph {
         margin-left: 10%;
         color: rgb(145, 143, 143);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+        &__ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+        }
+        &__paragraph {
+            margin-left: 0%;
+            text-align: center;
+        
+        }
     }
 }
