@@ -34,7 +34,24 @@
             background-color: rgba(26, 38, 211, 0.7);
             border: none;
             border-radius: 8px;
+            cursor: pointer;
         }
+       }
+    }
+}
+
+@media screen and (max-width: 675px){
+    .header__section{
+        width: 100%;
+        &__title{
+            text-align: center;
+            color: #fff;
+            width: 95%;
+        }
+       &__email{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
        }
     }
 }

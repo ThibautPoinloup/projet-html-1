@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(216, 216, 216);
+    &__ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-left: 10%;
+        &__li{
+            list-style-type: none;
+            &__a{
+                text-decoration: none;
+                color: rgba(26, 38, 211);
+            }
+        }
+    }
+    &__paragraph{
+        margin-left: 10%;
+        color: rgb(145, 143, 143);
+    }
+}

@@ -9,8 +9,12 @@
 @import './components/cards';
 
 span{
-    width: 60%;
+    width: 50%;
     height: 2px;
     display: block;
     margin: 0 auto 60px;
+    background-color: rgb(143, 143, 143);
 }
+
+@import './components/formulaire';
+@import './components/footer';
