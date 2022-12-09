@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@import './components/nav';
+@import './components/header';
+@import './components/cards';
+
+span{
+    width: 60%;
+    height: 2px;
+    display: block;
+    margin: 0 auto 60px;
+}

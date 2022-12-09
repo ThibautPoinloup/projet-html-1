@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    &__brand{
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }
+    &__sign{
+        padding: 10px;
+        color: #fff;
+        background-color: rgb(26, 38, 211);
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+}

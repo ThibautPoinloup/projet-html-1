@@ -1,0 +1,26 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    &__article{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__i{
+            text-align: center;
+            font-size: 90px;
+            color: rgb(26, 38, 211);
+        }
+        &__title{
+            text-align: center;
+            margin: 30px auto;
+        }
+        &__paragraph{
+            text-align: center;
+        }
+    }
+}

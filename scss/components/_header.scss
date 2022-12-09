@@ -1,0 +1,40 @@
+.header{
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/Thibaut\ POINLOUP\ -\ bg-masthead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    &__section{
+        position: absolute;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        &__title{
+            text-align: center;
+            color: #fff;
+        }
+       &__email{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        &__input, &__btn{
+            padding: 15px;
+            margin: 5px;
+        }
+        &__input{
+            width: 400px;
+            border-radius: 8px;
+        }
+        &__btn{
+            font-weight: bold;
+            color: #fff;
+            background-color: rgba(26, 38, 211, 0.7);
+            border: none;
+            border-radius: 8px;
+        }
+       }
+    }
+}

@@ -5,46 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet HTML 1</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <nav>
-      <a href="">Brand</a>
-      <a href="" class="sign">Sign up</a>
+    <nav class="nav">
+      <a href="#top" class="nav__brand">Brand</a>
+      <a href="" class="nav__sign">Sign up</a>
     </nav>
-    <header>
-      <section>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <div class="email">
-          <input type="text" placeholder="Take your Email">
-          <button type="submit" id="submit">Submit</button>
+    <header class="header">
+      <section class="header__section">
+        <h1 class="header__section__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <div class="header__section__email">
+          <input type="text" placeholder="Take your Email" class="header__section__email__input">
+          <button type="submit" id="submit" class="header__section__email__btn">Submit</button>
         </div>
       </section>
     </header>
     <main>
       <div class="cards">
-        <article>
-          <i class="fa-solid fa-puzzle-piece"></i>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
+        <article class="cards__article">
+          <i class="fa-solid fa-puzzle-piece cards__article__i"></i>
+          <h3 class="cards__article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p class="cards__article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia sapiente ab, excepturi rem ipsa et neque iure nemo tempora
             dicta, optio dolorem nam? Ratione explicabo quia iusto nobis aut!
           </p>
         </article>
-        <article>
-          <i class="fa-solid fa-puzzle-piece"></i>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
+        <article class="cards__article">
+          <i class="fa-solid fa-puzzle-piece cards__article__i"></i>
+          <h3 class="cards__article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p class="cards__article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia sapient3 ab, excepturi rem ipsa et neque iure nemo tempora
             dicta, optio dolorem nam? Ratione explicabo quia iusto nobis aut!
           </p>
         </article>
-        <article>
-          <i class="fa-solid fa-puzzle-piece"></i>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>
+        <article class="cards__article">
+          <i class="fa-solid fa-puzzle-piece cards__article__i"></i>
+          <h3 class="cards__article__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p class="cards__article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             mollitia sapiente ab, excepturi rem ipsa et neque iure nemo tempora
             dicta, optio dolorem nam? Ratione explicabo quia iusto nobis aut!
@@ -53,29 +53,29 @@
     </div>
       <span></span>
       <section class="formulaire">
-        <h2>Contact Us !</h2>
-        <form action="get">
-          <div>
-            <input type="text" placeholder="Nom">
-            <input type="text" placeholder="Prénom">
+        <h2 class="formulaire__title">Contact Us !</h2>
+        <form action="POST" class="formulaire__form">
+          <div class="formulaire__form__name">
+            <input type="text" placeholder="Nom" class="formulaire__form__name__input">
+            <input type="text" placeholder="Prénom" class="formulaire__form__name__input">
           </div>
-          <div>
-            <input type="text" placeholder="Adresse Email">
-            <input type="text" placeholder="Numéro de Téléphone">
+          <div class="formulaire__form__coordonnes">
+            <input type="text" placeholder="Adresse Email" class="formulaire__form__coordonnes__input">
+            <input type="text" placeholder="Numéro de Téléphone" class="formulaire__form__coordonnes__input">
           </div>
-          <textarea name="text" id="#" cols="30" rows="10"></textarea>
-          <button>Submit</button>
+          <textarea name="text" id="#" cols="30" rows="10" class="formulaire__form__textarea"></textarea>
+          <button class="formulaire__form__btn">Submit</button>
         </form>
       </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="">About </a>-</li>
-            <li><a href=""> Contact </a>-</li>
-            <li><a href=""> Term of Us </a>-</li>
-            <li><a href=""> privacy Policy</a></li>
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li class="footer__ul__li"><a href="" class="footer__ul__li__a">About </a>-</li>
+            <li class="footer__ul__li"><a href="" class="footer__ul__li__a"> Contact </a>-</li>
+            <li class="footer__ul__li"><a href="" class="footer__ul__li__a"> Term of Us </a>-</li>
+            <li class="footer__ul__li"><a href="" class="footer__ul__li__a"> privacy Policy</a></li>
         </ul>
-        <p>All right reserved !</p>
+        <p class="footer__paragraph">All right reserved !</p>
     </footer>
     <script
       src="https://kit.fontawesome.com/417135100d.js"
