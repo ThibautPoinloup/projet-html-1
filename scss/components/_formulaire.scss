@@ -9,10 +9,11 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.25);
         width: 90%;
         margin: 30px auto;
         padding: 10px;
+        border-radius: 8px;
         &__name{
             text-align: center;
             &__input{
@@ -20,6 +21,10 @@
                 width: 90%;
                 margin: 15px auto;
                 border-radius: 8px;
+                border: none;
+                background-color: rgb(233, 233, 233);
+                font-size: 14px;
+
             }
         }
         &__coordonnes{
@@ -29,6 +34,10 @@
                 width: 90%;
                 margin: 15px auto;
                 border-radius: 8px;
+                border: none;
+                background-color: rgb(233, 233, 233);
+                font-size: 14px;
+
             }
         }
         &__textarea{
@@ -36,6 +45,11 @@
             width: 90%;
             margin:15px auto;
             border-radius: 8px;
+            background-color: rgb(233, 233, 233);
+            padding: 10px;
+            border: none;
+            font-size: 14px;
+
         }
             &__btn{
                 margin: 15px;
@@ -46,7 +60,8 @@
                 border: none;
                 border-radius: 8px;
                 align-self: start;
-                
+                border: none;
+
             }
     }
 }
