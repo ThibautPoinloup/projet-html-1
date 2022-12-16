@@ -1,67 +1,86 @@
 .formulaire{
-    margin-bottom: 60px;
+    width: 100%;
     &__title{
         text-align: center;
-        margin-bottom: 60px;
+        font-size: 28px;
     }
     &__form{
         display: flex;
-        flex-wrap: wrap;
-        width: 600px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        margin: 0 auto;
-        padding: 20px;
-        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.562);
-        &__name, &__coordonnes{
-            width: 95%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin: 15px auto;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        margin: 30px auto;
+        padding: 10px;
+        &__name{
+            text-align: center;
             &__input{
                 padding: 10px;
-                width: 250px;
-                border-radius: 50px;
+                width: 90%;
+                margin: 15px auto;
+                border-radius: 8px;
+            }
+        }
+        &__coordonnes{
+            text-align: center;
+            &__input{
+                padding: 10px;
+                width: 90%;
+                margin: 15px auto;
+                border-radius: 8px;
             }
         }
         &__textarea{
-            width: 95%;
-            resize: none;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            padding: 10px;
-        }
-        &__btn{
-            font-weight: bold;
-            color: #fff;
-            background-color: rgba(26, 38, 211);
-            border: none;
+            resize: vertical;
+            width: 90%;
+            margin:15px auto;
             border-radius: 8px;
-            padding: 15px;
-            align-self: flex-start;
-            cursor: pointer;
         }
+            &__btn{
+                margin: 15px;
+                padding: 13px;
+                font-weight: bold;
+                color: #fff;
+                background-color: rgba(57, 60, 230,.8);
+                border: none;
+                border-radius: 8px;
+                align-self: start;
+                
+            }
     }
 }
 
-@media screen and (max-width:675px){
+@media screen and (min-width: 479px){
     .formulaire__form{
-        width: 90%;
+        width: 400px;
+        margin: 30px auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .formulaire__form{
+        width: 700px;
+        margin: 30px auto;
+        padding: 10px;
+
         &__name, &__coordonnes{
-            width: 95%;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0px auto;
-            &__input{
-                padding: 10px;
-                width: 95%;
-                border-radius: 50px;
-            margin: 15px auto;
-                
-            }
+            justify-content: center; 
+        }
+
+        &__name__input{
+            width: 300px;
+            margin: 10px;
+        }
+        &__coordonnes__input{
+            width: 300px;
+            margin: 10px;
+        }
+        &__btn{
+            margin: 30px;
+            
         }
     }
 }

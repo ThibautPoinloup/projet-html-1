@@ -12,9 +12,16 @@ span{
     width: 50%;
     height: 2px;
     display: block;
-    margin: 0 auto 60px;
+    margin: 0 auto 30px;
     background-color: rgb(143, 143, 143);
 }
 
 @import './components/formulaire';
 @import './components/footer';
+
+@media screen and (min-width: 1200px){
+    main, nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
