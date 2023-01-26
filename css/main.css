@@ -170,11 +170,15 @@ span {
 }
 .formulaire__form__name {
   text-align: center;
+  width: 100%;
 }
-.formulaire__form__name__input {
+.formulaire__form__name div {
+  width: 100%;
+}
+.formulaire__form__name div input {
   padding: 10px;
   width: 90%;
-  margin: 15px auto;
+  margin: 10px auto;
   border-radius: 8px;
   border: none;
   background-color: rgb(233, 233, 233);
@@ -182,11 +186,15 @@ span {
 }
 .formulaire__form__coordonnes {
   text-align: center;
+  width: 100%;
 }
-.formulaire__form__coordonnes__input {
+.formulaire__form__coordonnes div {
+  width: 100%;
+}
+.formulaire__form__coordonnes div input {
   padding: 10px;
   width: 90%;
-  margin: 15px auto;
+  margin: 10px auto;
   border-radius: 8px;
   border: none;
   background-color: rgb(233, 233, 233);
@@ -202,6 +210,10 @@ span {
   border: none;
   font-size: 14px;
 }
+.formulaire__form .error-message {
+  color: #ff0000;
+  display: none;
+}
 .formulaire__form__btn {
   margin: 15px;
   padding: 13px;
@@ -212,6 +224,7 @@ span {
   border-radius: 8px;
   align-self: start;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 479px) {
@@ -230,6 +243,7 @@ span {
   .formulaire__form__name, .formulaire__form__coordonnes {
     display: flex;
     justify-content: center;
+    gap: 5px;
   }
   .formulaire__form__name__input {
     width: 300px;
@@ -238,6 +252,9 @@ span {
   .formulaire__form__coordonnes__input {
     width: 300px;
     margin: 10px;
+  }
+  .formulaire__form textarea {
+    width: 95%;
   }
   .formulaire__form__btn {
     margin: 30px;
@@ -277,6 +294,4 @@ span {
     max-width: 1200px;
     margin: 0 auto;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

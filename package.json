@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThibautPoinloup/projet-html-1/issues"
   },
-  "homepage": "https://github.com/ThibautPoinloup/projet-html-1#readme"
+  "homepage": "https://github.com/ThibautPoinloup/projet-html-1#readme",
+  "dependencies": {
+    "axios": "^1.2.4"
+  }
 }

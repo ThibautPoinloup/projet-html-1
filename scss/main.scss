@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-@import './components/nav';
-@import './components/header';
-@import './components/cards';
+@import './layouts/nav';
+@import './layouts/header';
+@import './layouts/cards';
 
 span{
     width: 50%;
@@ -16,8 +16,8 @@ span{
     background-color: rgb(143, 143, 143);
 }
 
-@import './components/formulaire';
-@import './components/footer';
+@import './layouts/formulaire';
+@import './layouts/footer';
 
 @media screen and (min-width: 1200px){
     main, nav{

@@ -54,17 +54,39 @@
       <span></span>
       <section class="formulaire">
         <h2 class="formulaire__title">Contact Us !</h2>
-        <form action="POST" class="formulaire__form">
+        <form method="post" id="formContact" class="formulaire__form">
           <div class="formulaire__form__name">
-            <input type="text" placeholder="Nom" class="formulaire__form__name__input">
-            <input type="text" placeholder="Prénom" class="formulaire__form__name__input">
+            <div>
+                <input name="firstName" id="firstName" type="text" placeholder="Prénom" class="formulaire__form__name__input"/>
+                <div>
+                    <label for="firstName" class="error-message" id="firstNameError">Entrez votre prénom</label>
+                </div>
+            </div>
+            <div>
+                <input type="text" name="lastName" id="lastName" placeholder="Nom" class="formulaire__form__name__input"/>
+                <div>
+                    <label for="lastName" class="error-message" id="lastNameError">Entrez votre nom</label>
+                </div>
+            </div>
           </div>
           <div class="formulaire__form__coordonnes">
-            <input type="text" placeholder="Adresse Email" class="formulaire__form__coordonnes__input">
-            <input type="text" placeholder="Numéro de Téléphone" class="formulaire__form__coordonnes__input">
+            <div>
+                <input name="email" id="email" type="email" placeholder="Adresse Email" class="formulaire__form__coordonnes__input"/>
+                <div>
+                    <label for="email" class="error-message" id="emailError">Entrez votre E-mail</label>
+                </div>
+            </div>
+            <div>
+                <input name="phone" id="phone" type="tel" placeholder="Numéro de Téléphone" class="formulaire__form__coordonnes__input"/>
+                <div>
+                    <label for="phone" class="error-message" id="phoneError">Entrez votre numéro de téléphone</label>
+                </div>
+            </div>
           </div>
-          <textarea name="text" id="#" class="formulaire__form__textarea" placeholder="Tape ton message"></textarea>
-          <button class="formulaire__form__btn">Submit</button>
+          <textarea type="text" name="message" id="message" class="formulaire__form__textarea" placeholder="Tape ton message"></textarea>
+          <label for="message" class="error-message" id="messageError">Ajoutez votre message</label>
+          <button type="submit" class="formulaire__form__btn">Submit</button>
+          <p class="axios" id="axios"></p>
         </form>
       </section>
     </main>
@@ -80,9 +102,7 @@
         </ul>
         <p class="footer__paragraph">My Website 2022. All right reserved</p>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/417135100d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/417135100d.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

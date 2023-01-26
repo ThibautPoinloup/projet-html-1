@@ -16,29 +16,41 @@
         border-radius: 8px;
         &__name{
             text-align: center;
-            &__input{
-                padding: 10px;
-                width: 90%;
-                margin: 15px auto;
-                border-radius: 8px;
-                border: none;
-                background-color: rgb(233, 233, 233);
-                font-size: 14px;
-
+            width: 100%;
+            div{
+                width: 100%;
+                input{
+                    padding: 10px;
+                    width: 90%;
+                    margin: 10px auto;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: rgb(233, 233, 233);
+                    font-size: 14px;
+                }
+              
             }
+            
+                
         }
         &__coordonnes{
             text-align: center;
-            &__input{
-                padding: 10px;
-                width: 90%;
-                margin: 15px auto;
-                border-radius: 8px;
-                border: none;
-                background-color: rgb(233, 233, 233);
-                font-size: 14px;
-
+            width: 100%;
+            div{
+                width: 100%;
+                input{
+                    padding: 10px;
+                    width: 90%;
+                    margin: 10px auto;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: rgb(233, 233, 233);
+                    font-size: 14px;
+                }
+                
             }
+
+
         }
         &__textarea{
             resize: vertical;
@@ -51,6 +63,11 @@
             font-size: 14px;
 
         }
+        .error-message{
+            color: #ff0000;
+            display: none;
+
+        }
             &__btn{
                 margin: 15px;
                 padding: 13px;
@@ -61,7 +78,7 @@
                 border-radius: 8px;
                 align-self: start;
                 border: none;
-
+                cursor: pointer;
             }
     }
 }
@@ -83,6 +100,7 @@
         &__name, &__coordonnes{
             display: flex;
             justify-content: center; 
+            gap: 5px;
         }
 
         &__name__input{
@@ -93,9 +111,14 @@
             width: 300px;
             margin: 10px;
         }
+
+        textarea{
+            width: 95%;
+        }
+       
         &__btn{
-            margin: 30px;
-            
+            margin: 30px;  
         }
     }
+
 }
