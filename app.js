@@ -1,3 +1,5 @@
+
+import axios from 'axios';
 const formContact = document.getElementById('formContact')
 
 formContact.addEventListener('submit', (event) =>{
@@ -31,6 +33,12 @@ formContact.addEventListener('submit', (event) =>{
     const phoneError = document.getElementById('phoneError');
     const messageError = document.getElementById('messageError');
 
+    firstNameError.style.display = 'none';
+    lastNameError.style.display = 'none';
+    emailError.style.display = 'none';
+    phoneError.style.display = 'none';
+    messageError.style.display = 'none';
+
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.message) {
         const emailRegex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
         const nameRegex = /^[a-zA-Z ]+$/
@@ -40,30 +48,33 @@ formContact.addEventListener('submit', (event) =>{
             errors.firstName = true;
             firstNameError.style.display = 'block';
         }
+
         if (!formData.lastName || !nameRegex.test(formData.lastName)) {
             errors.lastName = true;
             lastNameError.style.display = 'block';
         }
+
         if (!formData.email || !emailRegex.test(formData.email)) {
             errors.email = true;
             emailError.style.display = 'block';
         }
+
         if (!formData.phone || !phoneRegex.test(formData.phone)) {
             errors.phone = true;
             phoneError.style.display = 'block';
-        }
+        } 
+
         if (!formData.message || formData.message.length < 4) {
             errors.message = true;
             messageError.style.display = 'block';
         }
+
     }
     if (!Object.values(errors).includes(true)) {
         console.log(formData)
     }
 
-    const axios = require('axios').default;
-    
-    axios({
+   const axios = axios({
             method: 'post',
             url: 'http://212.83.176.255:3030/contact',
             data: {
@@ -74,5 +85,5 @@ formContact.addEventListener('submit', (event) =>{
             message: message
             }
       });
-
+    
 });
