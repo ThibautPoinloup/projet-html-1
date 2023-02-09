@@ -1,0 +1,15 @@
+.carousel {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+#carouselContent {
+    width: 700px;
+}
+
+#carouselContent > img {
+    width: 100%;
+}
